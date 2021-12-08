@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+header,
+nav,
+section,
+.content-container,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 8em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    justify-content: space-between;
+    width: 60%;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid #f05454;
+}
+
+/* ========== Hero Section ==========*/
+section {
+    width: 100%;
+    height: 100vh;
+}
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+}
+#section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container-section1 {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+    border-radius: 20px;
+    background: rgb(45, 53, 64);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    transition: 0.3s;
+}
+.container-section1 h1 {
+    color: deeppink;
+}
+.container-section1 img {
+    width: 60%;
+}
+#container-section1-1 {
+    align-items: flex-start;
+    text-align: left;
+}
+#container-section1-2 {
+    align-items: center;
+    text-align: center;
+}
+#container-section1-3 {
+    align-items: flex-end;
+    text-align: right;
+}
+.container-section1:hover {
+    transform: scale(1.2);
+}
+
+#section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container-section2 {
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+    border-radius: 20px;
+    background: linear-gradient(45deg, #2d3540, #2d3540);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    transition: all .4s ease-in-out;
+
+    align-items: center;
+    text-align: center;
+}
+.container-section2 h2 {
+    opacity: 10%;
+    font-size: 96px;
+}
+.container-section2 h1 {
+    color: white;
+    font-size: 48px;
+}
+.container-section2 img {
+    width: 60%;
+}
+#container-section2-1 {
+
+}
+#container-section2-2 {
+
+}
+#container-section2-3 {
+
+}
+button {
+    background-color: #0A66C2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+    border: 0;
+    height: 40px;
+    width: 140px;
+    border-radius: 100px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+#button-section2-1 {
+    background: #0A66C2;
+}
+#button-section2-2 {
+    background: #ff0044;
+}
+#button-section2-3 {
+    background: #3da200;
+}
+button:hover, button:focus {
+    opacity: 50%;
+    color: #ffffff;
+}
+button:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+.subcontainer-section2 {
+    width: 380px;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Тень - offset-x, offset-y, blur, color */
+    border-radius: 20px;
+    background: rgb(34, 39, 47);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    transition: 0.3s;
+
+    align-items: center;
+    text-align: center;
+}
+.container-section2:hover {
+    background: linear-gradient(45deg, #b13dff, #5200b6);
+    opacity: 100%;
+    transform: translateY(-20px);
+    transition: all .4s ease-in-out;
+}
+
+
+.container {
+    position: relative;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%) rotate(-50deg);
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    width: 200px;
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .5s;
+}
+
+.container .card:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .6s;
+}
+
+.container .card .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .5s;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.container .card .contentBx .color span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px gray;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+    background: #b90000;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+    background: #000fb0;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+    background: #048119;
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #727272;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Тень - offset-x, offset-y, blur, color */
+    border: 0;
+    height: 40px;
+    width: 140px;
+    border-radius: 100px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.container .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+}
+#section-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: transparent; /* opacity: 0; should do the thing either */
+    box-shadow: 0 0 0 100000vh black;
+    border-radius: 40px;
+}
+
+
+.card2{
+    border-radius: 20px;
+    background:  linear-gradient(0deg, rgb(153, 0, 255) 0%, rgb(170, 0, 255) 100%);
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s;
+    padding: 14px 80px 18px 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+}
+.subcontainer{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.2s;
+    padding-left: 50px;
+    opacity: 0;
+}
+.subcontainer h1 {
+     font-size: 52px;
+ }
+.subcontainer p {
+    font-size: 24px;
+}
+.subcontainer button {
+    background-color: #0A66C2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+    border: 0;
+    height: 40px;
+    width: 140px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 16px;
+    justify-content: center;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+
+
+.card2:hover img {
+    transform: scale(1.3) translateX(100px);
+}
+
+.card2:hover .subcontainer {
+    opacity: 100%;
+}
+
+.card2 h3{
+    font-weight: 600;
+}
+
+.card2 img{
+    width: 500px;
+    transition: 0.2s;
+    right: 15px;
+}

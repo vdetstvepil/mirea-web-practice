@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            color: #FFF;
+            background-color: #3F3F3F;
+            font-family: sans-serif;
+        }
+        .card {
+            width: 300px; /* Ширина контейнера */
+            margin: auto; /* Разметка по центру */
+            padding-bottom: 25px; /* Отступ от нижнего края */
+            padding-right: 25px; /* Отступ от правого края */
+            padding-left: 25px; /* Отступ от левого края */
+            border-radius: 20px; /* Скругление */
+            border: 1px solid #FFB000; /* Обводка - width, color style, color */
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+        }
+        .card:hover { /* Анимация карточек при наведении */
+            transform: translate(-10px, -10px); /* Подъем на 10 пикселей влево и вверх */
+        }
+        h2 {
+            font-family: 'Oswald', sans-serif; /* Шрифт заголовка */
+            text-decoration: underline; /* Нижнее подчеркивание */
+            text-transform: uppercase; /* Заглавные буквы */
+        }
+        .card p:not([class]) {
+            border-radius: 20px; /* Скругление */
+            background-color: #777777; /* Фон */
+            padding: 25px; /* Отступ от краев */
+            line-height: 1.5; /* Расстояние между строками */
+            text-align: center;
+        }
+        a, a:visited, a:hover, a:active {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 50px;"></div> <!-- Отступ между блоками -->
+<div style="width: 750px; margin: auto;">
+    <a href="https://github.com">
+        <div class="card" style="float: left">
+            <h2 style="text-align: center">GitHub</h2>
+            <img src="Resources/github_logo.svg" width="200" height="200" style="display: block;
+            margin-left: auto; margin-right: auto; width: 50%;" alt="github logo">
+            <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Tempore, Quas.</p>
+        </div>
+    </a>
+    <a href="https://microsoft.com">
+        <div class="card" style="float: right;" >
+            <h2 style="text-align: center">Microsoft</h2>
+            <img src="Resources/microsoft_logo.png" width="180" height="180" style="display: block;
+            margin-left: auto; margin-right: auto; width: 50%;" alt="github logo">
+            <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Tempore, Quas.</p>
+        </div>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    background-color: #6C4A4A; /* Фон страницы */
+    margin: 0; /* Убираем отступы от краев страницы */
+}
+header {
+    display: flex;
+    justify-content: space-around; /* Разметка элементов меню */
+    align-items: center;
+    background-color: #000000; /* Фон шапки */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+    width: 100%;
+    height: 75px; /* Фикс. высота шапки */
+}
+#logo {
+    width: 36px; /* Ширина лого */
+    height: 36px; /* Высота лого */
+    /*padding-top: 10px; /* Отступ от краев */
+
+    animation: logoZoomOut 250ms; /* Анимация при нанведении */
+    transition: all ease-in-out; /* Параметр анимации */
+}
+#logo:hover {
+    width: 52px; /* Ширина лого */
+    height: 52px; /* Высота лого */
+
+    animation: logoZoomIn 250ms; /* Анимация при нанведении */
+}
+#nav_items {
+    display: flex;
+    gap: 48px; /* Расстояние между элементами меню */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+#nav_items a {
+    display: inline-block;
+    color: #FFFFFF; /* Цвет текста */
+    border: 2px solid rgba(200, 149, 149, 0); /* Обводка элемента */
+    border-radius: 5px; /* Скругление */
+    text-decoration: none; /* Убираем синие ссылки */
+    font-family: sans-serif; /* Шрифт элементов меню */
+    padding: 10px; /* Добавляем пространство вокруг текста */
+
+    animation: borderFadeOut 500ms; /* Анимация при нанведении */
+    transition: all ease-in-out; /* Параметр анимации */
+}
+#nav_items a:hover {
+    border: 2px solid rgba(200, 149, 149, 1); /* Обводка элемента */
+    border-radius: 5px; /* Скругление */
+
+    animation: borderFadeIn 500ms; /* Анимация при нанведении */
+    transition: all ease-in-out; /* Параметр анимации */
+}
+@keyframes borderFadeIn {
+    from {
+        border-color: rgba(200, 149, 149, 0)
+    }
+    to {
+        border-color: rgba(200, 149, 149, 1);
+    }
+}
+@keyframes borderFadeOut {
+    from {
+        border-color: rgba(200, 149, 149, 1);
+    }
+    to {
+        border-color: rgba(200, 149, 149, 0);
+    }
+}
+@keyframes logoZoomIn {
+    from {
+        width: 36px;
+        height: 36px;
+    }
+    to {
+        width: 52px;
+        height: 52px;
+    }
+}
+@keyframes logoZoomOut {
+    from {
+        width: 52px;
+        height: 52px;
+    }
+    to {
+        width: 36px;
+        height: 36px;
+    }
+}

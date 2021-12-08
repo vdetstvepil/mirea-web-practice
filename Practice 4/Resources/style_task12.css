@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+header,
+nav,
+section,
+.content-container,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 8em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    justify-content: space-between;
+    width: 60%;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid #f05454;
+}
+
+
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+    width: 100%;
+}
+.gradient-card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, orange, darkviolet);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#section-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Смещение секции  */
+}
+#section-1 .container-red {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start; /* Смещение секции к концу строки */
+}
+#section-1 .container-blue {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Смещение секции к началу строки */
+}
+ .gradient-card-red {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, orange, deeppink);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+#section-1 .gradient-card-blue {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, darkcyan, cyan);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+
+#section-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Смещение секции  */
+}
+#section-2 .container-violet {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Смещение секции к концу строки */
+    align-items: flex-start;
+}
+#section-2 .container-green {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Смещение секции к началу строки */
+    align-items: flex-end;
+}
+#section-2 .gradient-card-violet {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, deeppink, deepskyblue);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+#section-2 .gradient-card-green {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, yellowgreen, mediumspringgreen);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+
+#section-3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Смещение секции  */
+}
+#section-3 .container-darkviolet {
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Смещение секции к концу строки */
+    align-items: flex-start;
+}
+#section-3 .container-darkgreen {
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Смещение секции к началу строки */
+    align-items: flex-end;
+}
+#section-3 .container-orange {
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Смещение секции к началу строки */
+    align-items: center;
+}
+.gradient-card-darkviolet {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, mediumvioletred, midnightblue);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+#section-3 .gradient-card-darkgreen{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, mediumspringgreen, darkblue);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+#section-3 .gradient-card-orange{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, orangered, orange);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+    text-align: center;
+}
+#section-3 .container-darkgreen:hover{
+    align-items: flex-start;
+}
+#section-3 .container-orange:hover {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: normal;
+}
+
+#section-4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Смещение секции  */
+}
+#section-4 .container-pink {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Смещение секции к концу строки */
+}
+#section-4 .container-cyan {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center; /* Смещение секции к концу строки */
+    align-items: center;
+}
+#section-4 .gradient-card-pink {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff0044, #ff00d5);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+#section-4 .gradient-card-cyan {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #00468b, #00ffff);
+    padding: 60px 80px;
+    font-family: 'Noto Sans JP', system-ui;
+    font-weight: bold;
+}
+
+#section-5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Смещение секции  */
+}
+#section-5 .container-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Смещение секции к концу строки */
+    order: 2;
+}
+#section-5 .container-2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Смещение секции к концу строки */
+    order: 1;
+}
+#section-5 .container-3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Смещение секции к концу строки */
+    order: 3;
+}
+
+#section-6 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Смещение секции  */
+    flex-wrap: wrap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#section-7 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Смещение секции  */
+    flex-wrap: wrap-reverse;
+}

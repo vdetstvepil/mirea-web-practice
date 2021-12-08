@@ -1,0 +1,120 @@
+/* Side bar */
+body ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #2f2f2f;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+
+    font-family: "Segoe UI Semibold", sans-serif;
+    font-weight: normal;
+}
+
+/* Логотип и подпись */
+body ul header {
+    padding: 2em 0.5em;
+    text-align: center;
+}
+
+/* Картинка логотипа */
+body ul header img {
+    width: 200px;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+body ul header img:hover {
+    transform: scale(1.2);
+}
+
+/* Подпись к логотипу */
+body ul header h1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+
+    font-family: "Segoe UI Semibold", sans-serif;
+    font-weight: normal;
+    color: white;
+}
+body ul header p {
+    margin-top: 3px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+/* Элемент меню (стрелка + текст) */
+body ul .menu-items-container li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+body ul .menu-items-container li img {
+    padding-right: 3px;
+    padding-top: 3px;
+    display: inline-block;
+}
+
+/* Элемент меню */
+body ul .menu-items-container li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Активный элемент меню */
+body ul .menu-items-container li a.active {
+    background-color: #ffad00;
+    color: black;
+}
+
+/* Элемент меню при наведении */
+body ul .menu-items-container li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Надпись "Разделы" */
+body ul .menu-items-container h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+
+    font-family: "Segoe UI Semibold", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8;
+}
+
+body ul .menu-items-container hr {
+    color: #595959;
+}
+
+body ul footer {
+    padding: 20px;
+
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: normal;
+    color: #a8a8a8;
+}
+
+body ul footer img {
+    width: 100%;
+    overflow: hidden;
+}

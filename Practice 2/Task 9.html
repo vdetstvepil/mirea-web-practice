@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            color: #FFF;
+            background-color: #3F3F3F;
+            font-family: sans-serif;
+        }
+        span.highlighted-text {
+            color: #FFB000; /* Цвет текста выделенных эл-тов */
+        }
+        .card {
+            width: 300px; /* Ширина контейнера */
+            margin: auto; /* Разметка по центру */
+            padding-bottom: 25px; /* Отступ от нижнего края */
+            padding-right: 25px; /* Отступ от правого края */
+            padding-left: 25px; /* Отступ от левого края */
+            border-radius: 20px; /* Скругление */
+            border: 1px solid #FFB000; /* Обводка - width, color style, color */
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+        }
+        h2 {
+            font-family: 'Oswald', sans-serif; /* Шрифт заголовка */
+            text-decoration: underline; /* Нижнее подчеркивание */
+            text-transform: uppercase; /* Заглавные буквы */
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 50px;"></div> <!-- Отступ между блоками -->
+<div style="width: 750px; margin: auto;">
+    <div class="card" style="float: left">
+        <h2>WEB<span class="highlighted-text">DEV</span></h2>
+        <ol type = "1"> <!-- Пронумерованный список элементов -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+            <li>Django</li>
+        </ol>
+    </div>
+    <div class="card" style="float: right;">
+        <h2>Programming <span class="highlighted-text">Languages</span></h2>
+        <ul> <!-- Список элементов -->
+            <li>C#</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

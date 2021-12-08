@@ -1,0 +1,33 @@
+body {
+    background-color: #6C4A4A; /* Фон страницы */
+    margin: 0; /* Убираем отступы от краев страницы */
+}
+header {
+    display: flex;
+    justify-content: space-around; /* Разметка элементов меню */
+    align-items: center;
+    background-color: #000000; /* Фон шапки */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Тень - offset-x, offset-y, blur, color */
+    width: 100%;
+}
+#logo {
+    font-family: 'Oswald', sans-serif; /* Шрифт заголовка */
+    text-transform: uppercase; /* Заглавные буквы */
+    color: #FFFFFF;
+}
+#nav_items {
+    display: flex;
+    gap: 48px; /* Расстояние между элементами меню */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+#nav_items a {
+    display: inline-block;
+    color: #FFFFFF; /* Цвет текста */
+    text-decoration: none; /* Убираем синие ссылки */
+    font-family: sans-serif; /* Шрифт элементов меню */
+    padding: 5px; /* Добавляем пространство вокруг текста */
+}
+
